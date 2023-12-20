@@ -1,0 +1,24 @@
+version: '3'
+services: 
+   bcad-demo:
+     build:
+       context: .
+       dockerfile: ./Dockerfile
+     restart: always
+     container_name: service
+     volumes:
+      - type: bind
+        source: /var/www/api/service
+        target: /data
+      # - type: bind
+      #   source: /var/www/tm/oauthtoken/log
+      #   target: /tmp/log
+
+     ports:
+       - "8083:8083"
+     networks:
+      - service
+  
+networks:
+  service:
+      driver: bridge
