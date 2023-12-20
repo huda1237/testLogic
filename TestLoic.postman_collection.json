@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "8487659d-63de-4782-9846-e9bc99839752",
+		"name": "TestLoic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8176840",
+		"_collection_link": "https://orange-escape-530531.postman.co/workspace/Team-Workspace~353be14b-7862-4412-8a3c-5243c7d8c3bf/collection/8176840-8487659d-63de-4782-9846-e9bc99839752?action=share&source=collection_link&creator=8176840"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8083/v1.0/group-product/insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"group_name\" : \"Elektronik\",\r\n    \"description\" : \"description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/v1.0/group-product/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1.0",
+						"group-product",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/v1.0/group-product/get?id=3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/v1.0/group-product/get?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1.0",
+						"group-product",
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/v1.0/group-product/get-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/v1.0/group-product/get-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1.0",
+						"group-product",
+						"get-all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/v1.0/product/get-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/v1.0/product/get-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1.0",
+						"product",
+						"get-all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/v1.0/product/get?id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/v1.0/product/get?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1.0",
+						"product",
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/v1.0/basket/add-basket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idProduct\" : 1,\r\n    \"name\" : \"test\",\r\n    \"qty\" : 10,\r\n    \"price\" : 1000000\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/v1.0/basket/add-basket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1.0",
+						"basket",
+						"add-basket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/v1.0/basket/get-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/v1.0/basket/get-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1.0",
+						"basket",
+						"get-all"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/v1.0/basket/get?id=710",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/v1.0/basket/get?id=710",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1.0",
+						"basket",
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "710"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
