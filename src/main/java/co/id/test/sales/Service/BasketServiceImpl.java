@@ -14,11 +14,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Service
 @Log4j2
-public class BasketServiceImpl implements BasketService{
+public class BasketServiceImpl implements BasketService {
     @Autowired
     private BasketDao dao;
     @Autowired
